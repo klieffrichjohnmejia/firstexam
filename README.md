@@ -1,1 +1,2 @@
 This is a Python Stopwatch Project Repository with a graphical user interface (GUI) that displays all necessary data to execute controls, functionalities and buttons such as Start, Stop, Split(Lap) and Reset. Developed by the group members: Vlademier N. Ando, Klieff Richjohn B. Mejia, and Ivan V. Amolo.
+A basic stop watch that may be used to time a variety of jobs, displaying the total running time as well as the running time for each designated task.
