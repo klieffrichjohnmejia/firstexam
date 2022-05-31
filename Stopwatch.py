@@ -1,9 +1,10 @@
+#importing the modules
 import tkinter as tk
 from tkinter.font import Font
 from time import sleep
 from threading import Thread
 
-
+#Creating important variables
 class Stopwatch(tk.Frame):
     def __init__(self, parent):
         tk.Frame.__init__(self, parent)
@@ -50,6 +51,7 @@ class Stopwatch(tk.Frame):
 
         self.thread = Thread(target=self.update, daemon=True)
 
+#Functions        
     def update(self):
         while True:
             if self.kill:
@@ -124,7 +126,7 @@ class Stopwatch(tk.Frame):
         self.saved_canvas.configure(scrollregion=self.saved_canvas.bbox('all'),
                                     yscrollcommand=self.scrollbar.set)
 
-
+#Creaating a screen
 if __name__ == "__main__":
     root = tk.Tk()
     root.minsize(385, 100)
